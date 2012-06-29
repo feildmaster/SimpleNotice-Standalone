@@ -30,7 +30,7 @@ public class adl extends oe {
         this.h = paramMinecraft;
         Socket localSocket = new Socket(InetAddress.getByName(paramString), paramInt);
         this.g = new lg(localSocket, "Client", this);
-        SimpleNotice.get().set(h).set(this);
+        SimpleNotice.get().set(h).set(this); // SimpleNotice
     }
 
     public void b() {
@@ -54,7 +54,7 @@ public class adl extends oe {
 
         ((rk) this.h.c).a(paramaec.d == 1);
 
-        SimpleNotice.get().sendRegister();
+        SimpleNotice.get().sendRegister(); // SimpleNotice
     }
 
     public void a(jp paramjp) {
@@ -654,7 +654,7 @@ public class adl extends oe {
     }
 
     public void a(ee paramee) {
-        SimpleNotice.get().recievePacket(paramee);
+        SimpleNotice.get().recievePacket(paramee); // SimpleNotice
     }
 
     public void a(aiu paramaiu) {

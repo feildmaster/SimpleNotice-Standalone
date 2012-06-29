@@ -349,7 +349,7 @@ public class aiy extends oo {
 
         GL11.glPopMatrix();
 
-        NoticeGui.get().tick();
+        NoticeGui.get().tick(); // SimpleNotice
 
         if (((this.i.h instanceof ahv)) && (this.i.A.y.e)) {
             adl localadl = ((ahv) this.i.h).cl;
