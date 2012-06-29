@@ -38,9 +38,9 @@ public class SimpleNotice {
         netHandler.c(register);
     }
 
-    public void recievePacket(ee paramee) {
-        if ("SimpleNotice".equals(paramee.a)) {
-            NoticeGui.get().addNotice(new String(paramee.c));
+    public void recievePacket(ee Packet250) {
+        if ("SimpleNotice".equals(Packet250.a)) {
+            NoticeGui.get().addNotice(new String(Packet250.c, Charset.forName("UTF-8")));
         }
     }
 }
